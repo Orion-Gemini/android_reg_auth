@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".reg">
+
+    <EditText
+        android:id="@+id/passport"
+        android:layout_width="315dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:ems="20"
+        android:hint="Введите серию и номер паспорта"
+        android:inputType="text"
+        android:textColor="#434343"
+        android:textColorHint="#434343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastdname" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="315dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="48dp"
+        android:ems="20"
+        android:hint="Введите фамилию"
+        android:inputType="text"
+        android:textColor="#434343"
+        android:textColorHint="#434343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="315dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:ems="20"
+        android:hint="Введите имя"
+        android:inputType="text"
+        android:textColor="#434343"
+        android:textColorHint="#434343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surname" />
+
+    <EditText
+        android:id="@+id/lastdname"
+        android:layout_width="315dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:ems="20"
+        android:hint="Введите отчество"
+        android:inputType="text"
+        android:textColor="#434343"
+        android:textColorHint="#434343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="315dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:ems="20"
+        android:hint="Введите пароль"
+        android:inputType="textPassword"
+        android:textColor="#434343"
+        android:textColorHint="#5D5D5D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="315dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:ems="20"
+        android:hint="Введите логин"
+        android:inputType="text"
+        android:textColor="#434343"
+        android:textColorHint="#434343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passport" />
+
+    <TextView
+        android:id="@+id/reg_text"
+        android:layout_width="211dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="100dp"
+        android:text="Регистрация"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="132dp"
+        android:text="Зарегестироваться"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:backgroundTint="#B4B2B2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="60dp"
+        android:text="Назад"
+        app:backgroundTint="#A61414"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
